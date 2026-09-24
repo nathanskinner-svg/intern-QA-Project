@@ -1,0 +1,10 @@
+
+import SideBar from "@/components/ui/SideBar";
+
+export default function BugsPage() {
+  return (
+    <main className="min-h-screen pl-[250px]">
+      <SideBar />
+    </main>
+  );
+}
