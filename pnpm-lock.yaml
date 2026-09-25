@@ -190,9 +190,15 @@ importers:
       react:
         specifier: 19.2.8
         version: 19.2.8
+      react-cx:
+        specifier: ^0.1.12
+        version: 0.1.12(react@19.2.8)
       react-dom:
         specifier: 19.2.8
         version: 19.2.8(react@19.2.8)
+      zod:
+        specifier: 4.6.5
+        version: 4.6.5
     devDependencies:
       '@playwright/test':
         specifier: ^1.63.0
@@ -1727,6 +1733,9 @@ packages:
   citty@0.2.2:
     resolution: {integrity: sha512-+6vJA3L98yv+IdfKGZHBNiGW5KHn22e/JwID0Strsz8h4S/csAu/OuICwxrg44k5MRiZHWIo8XXuJgQTriRP4w==}
 
+  classnames@2.5.1:
+    resolution: {integrity: sha512-saHYOzhIQs6wy2sVxTM6bUDsQO4F50V9RQ22qBpEdCW+I+/Wmke2HOl6lS6dTpdxVhb88/I6+Hs+438c3lfUow==}
+
   client-only@0.0.1:
     resolution: {integrity: sha512-IV3Ou0jSMzZrd3pZ48nLkT9DA7Ag1pnPzaiQhpW7c3RbcqqzvzzVu+L8gfqMp/8IM2MQtSiqaCxrrcfu8I8rMA==}
 
@@ -2866,6 +2875,11 @@ packages:
 
   rc9@2.1.2:
     resolution: {integrity: sha512-btXCnMmRIBINM2LDZoEmOogIZU7Qe7zn4BpomSKZ/ykbLObuBdvG+mFq11DL6fjH1DRwHhrlgtYWG96bJiC7Cg==}
+
+  react-cx@0.1.12:
+    resolution: {integrity: sha512-mOy7jzFV3F2RKD001UPthpmqA7HZ8c5veaMd9m9ROp25kHFbuaREAzGi7ZDimmQxa63j5o6p6FZ9ME3RBe/aNQ==}
+    peerDependencies:
+      react: ^15.0.0-0 || ^16.0.0-0
 
   react-dom@19.2.8:
     resolution: {integrity: sha512-rVprimfGBG3DR+Tq0IQG2DT5PxKth1WIGDmj5yPmlzr4YBe7uyE+Du4oVqTDXZSHGGGXRtTJEGSSePyQCMBglQ==}
@@ -4672,6 +4686,8 @@ snapshots:
 
   citty@0.2.2: {}
 
+  classnames@2.5.1: {}
+
   client-only@0.0.1: {}
 
   clsx@2.1.1: {}
@@ -5941,6 +5957,11 @@ snapshots:
     dependencies:
       defu: 6.1.7
       destr: 2.0.5
+
+  react-cx@0.1.12(react@19.2.8):
+    dependencies:
+      classnames: 2.5.1
+      react: 19.2.8
 
   react-dom@19.2.8(react@19.2.8):
     dependencies:
