@@ -4,6 +4,8 @@ import SideBar from "@/components/ui/SideBar";
 import Table, { type TableField } from "@/components/ui/Table";
 import { prisma } from "@/lib/prisma";
 
+export const dynamic = "force-dynamic";
+
 type BugRow = {
   id: number;
   title: string;

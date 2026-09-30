@@ -5,6 +5,8 @@ import SideBar from "@/components/ui/SideBar";
 import Table, { type TableField } from "@/components/ui/Table";
 import Link from "next/link";
 
+export const dynamic = "force-dynamic";
+
 //Defines data type
 type TestCaseRow = {
   id: number;

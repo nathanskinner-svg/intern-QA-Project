@@ -6,6 +6,8 @@ import { parseId } from "@/lib/validation/id";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
+export const dynamic = "force-dynamic";
+
 type TestCaseDetailPageProps = {
   params: Promise<{ id: string }>;
 };
