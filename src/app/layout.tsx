@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
+import ToastProvider from "@/components/Toast/ToastProvider";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -26,7 +27,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className="min-h-full flex flex-col">
         <AppRouterCacheProvider options={{ enableCssLayer: true }}>
-          {children}
+          <ToastProvider>{children}</ToastProvider>
         </AppRouterCacheProvider>
       </body>
     </html>
